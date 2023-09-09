@@ -1,92 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="Style.css">
+  <script type="text/javascript" src="Script.js"></script>
 <title>Calculator</title>
-
-<!-- JavaScript Code -->
-<script>
-
-// Use insert() function to insert the number in textview.
-function insert(num) 
-{
-document.form1.textview.value = document.form1.textview.value + num;
-}
-
-// Use equal() function to return the result based on passed values.
-function equal()
-{
-var exp = document.form1.textview.value;
-if(exp)
-{
-document.form1.textview.value = eval(exp)
-}
-}
-
-/* Here, we create a backspace() function to remove the number at the end of the numeric series in textview. */
-function backspace()
-{
-var exp = document.form1.textview.value;
-document.form1.textview.value = exp.substring(0, exp.length - 1); /* remove the element from total length ? 1 */
-}
-
-
-</script>
-
-<!--code for CSS for Styling Calculator -->
-<style>
-/*Outer layout of the Calculator. */
-.formstyle
-{
-width: 300px;
-height: 330px;
-margin: 20px auto;
-border: 3px solid black;
-border-radius: 5px;
-padding: 20px;
-text-align: center;
-background-color: darkslategrey;
-}
-
-/* Display top horizontal bar that contain some information. */
-h1 {
-   text-align: center;
-   padding: 23px;
-   background-color: black;
-   color: white;
-   }
-input:hover
-{
-background-color: white;
-color: black;
-}
-   
-*{
-margin: 0;
-padding: 0;
-}
-
-/* It is used to create the layout for calculator button. */
-.btn{
-width: 50px;
-height: 50px;
-font-size: 25px;
-margin: 2px;
-cursor: pointer;
-background-color: black;
-color: white;
-
-}
-
-/* It is used to display the operations performed on numbers and their results. */
-.textview{
-width: 223px;
-margin: 5px;
-font-size: 25px;
-padding: 5px;
-background-color: lightskyblue;
-}  
-   
-</style>
 </head>
 <body>
 <h1> Calculator  Using JavaScript </h1>
