@@ -22,7 +22,7 @@ body{
     height: 260px;
     margin: 19px auto;
     border-radius: 150px;
-    background: black;
+    background: white;
   }
   /* -- Second hand -- */
   #second { position: absolute; top: 123px; left: 128px; width: 100px; height: 2px; border: 1px solid transparent; border-radius: 5px; transform: unset; background: lightskyblue; transform-origin: 1px 1px; }
