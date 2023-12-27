@@ -39,8 +39,7 @@ function startTime() {
   
     m = checkTime(m);
     s = checkTime(s);
-   document.getElementById('date').innerHTML =
-    d;
+    document.getElementById('date').innerHTML =d;
  document.getElementById('day').innerHTML =
     wd;
  document.getElementById('month').innerHTML =
